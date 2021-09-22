@@ -1,3 +1,5 @@
+//JSX
+
 export default function segundo(){
     return (
         <div>
