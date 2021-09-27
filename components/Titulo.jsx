@@ -1,18 +1,18 @@
 export default function Titulo(props){
     console.log(props)
-    if(props.pequeno){
 
-        return (<>
+    return props.pequeno ?(  // ? funciona como IF
+
+        <>
                 <p>{props.principal}</p>
                 <p>{props.secundario}</p>
                 </>
-                )
-    }else{
-    return (<>
+                
+     ) : (<> 
             <h1>{props.principal}</h1>
             <h2>{props.secundario}</h2>
             </>
-            )
-    }
+            )// : funciona como else
+    
     
 }
